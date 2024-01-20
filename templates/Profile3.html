@@ -1,10 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB ESSENTIAL -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- MDB PLUGINS -->
+    <link rel="stylesheet" href="plugins/css/all.min.css" />
+    <!-- Custom styles -->
+    <style></style>
+  </head>
 
-</body>
+  <body>
+    <!--Main Navigation-->
+  <header class="" style="margin-top: 60px">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-2">
+      <div class="container-fluid justify-content-between">
+        <!-- Left elements -->
+        <div class="d-flex my-2 my-sm-0">
+          <!-- Toggler -->
+          <button data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1"
+            class="btn shadow-0 p-0 ms-2 me-3 d-block d-xl-none" aria-controls="#sidenav-1" aria-haspopup="true" data-mdb-ripple-init>
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+          <!-- Brand -->
+          <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+            <img src="https://ci3.googleusercontent.com/mail-img-att/APrP3qGt7ck2IaC0SqyfEcmMcN2ymu47yKVEZBiL3FqRX7Cv3BkclBMUPvt8mc0usBStn2WUqBWlB540WsG7wciptMGG0KkAXJeDWlRbZMmrP4V8afUmEmydx-9bIswIXpMG7sXRlINXvvGJyucToujI7H3B6BozXYUYZZGJwgzpMJW5nIqfV9Gt-sHo5KDHcCVJj6Uh-sM9mxwGq-ZyDK44DZ9k2qjPv0B0i_l3hNwmZ2HcfrNauQnM34VORFQELR1Xd8OGfQ231r06L-9ywrtgz9ZMcgLwNSDMuMowU_Tn-5uMWot2BK2H7ZQTmMdYvCsOyqZToCS-ZsEME9xOO3kNvK1f8IdqHACCykpx82Hi-AXu_fK_lSVXBky7Uld2oq1-hWG6Mxw5FuxvSWrq3eBWTdhaeCTcCS8fcod2PyY3mdlGe9K_vPbfRRf_DTrlJKgbiZcrCq-XpClFMIjkboH0yprYrkGby-bgyK1Or3B0UNdM2KRm_vhyid8rOpHxundNkBI-x5Tp4XKV_QE5qJjaYmE40owMElMLdBGpYGJ3QSoC51KDn4uHAvco0WpFO7MZ31lBTdbw4VyCk3SGF8LSyhZEWzq0CV69hqPTROPsknM8WoCm_RhkgUHAcEdVvWuOYu3C8YQfBo6OVAx80Q40MWu55wM2ZrfPrNTrZ7DP9zwsMaHq7xS6YGr9UigRmlrgqc5eOj6otKpfM0isNy5aiEo56WNhDifIZCLmzKW3jbgEt7SNaSGi31rBjER1ZQiT15rNmim0GKm7DJO6xTdmxvIaviW-D4JCvKWXC7wQjbVLs63CipC7s-MjMEU_pheY7AXtZMDJ_-5iHxV0U6t6anp8qenZbiommfZWD2NRmUF9MorsqBQPtbH_kBv3qRYoMHbSGqluTnJ3naxxjGPWBnvyeC_nplEezAnL_RPCn2w0RtVnAD48G-5RMU5G3LMaC69h1P7Tx7CoIwq9Dd7RFVaJt-I_PD0E2feI-pDg20Ri8Z8CD9_rxsIYfBUCAl4=s0-l75-ft" height="20%" alt="" loading="lazy"
+              style="margin-top: 2px" />
+          </a>
+
+          <!-- Search form -->
+          <form class="input-group w-auto my-auto d-none d-sm-flex">
+            <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search"
+              style="min-width: 125px" />
+            <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+          </form>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <ul class="navbar-nav flex-row d-none d-md-flex">
+          <li class="nav-item me-3 me-lg-1 active">
+            <a class="nav-link" href="http://127.0.0.1:5000/">
+    <span><i class="fas fa-home fa-lg"></i></span>
+    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+</a>
+          </li>
+
+
+        </ul>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+              <img src="https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="rounded-circle" height="22" alt=""
+                loading="lazy" />
+              <strong class="d-none d-sm-block ms-1">Erin Guggenheimer</strong>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-1">
+            <a class="nav-link" href="#">
+            </a>
+          </li>
+          <li class="nav-item dropdown me-3 me-lg-1">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown me-3 me-lg-1">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+            <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+              data-mdb-dropdown-init aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Right elements -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidenav -->
+    <div id="sidenav-1" class="sidenav" data-mdb-sidenav-init role="navigation">
+      <form class="input-group w-auto my-auto p-4 pb-2">
+        <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search"
+          style="min-width: 125px" />
+      </form>
+      <ul class="sidenav-menu">
+        <li class="sidenav-item">
+          <a class="sidenav-link">
+            <i class="fas fa-home fa-fw me-3"></i><span>Home</span></a>
+        </li>
+        <li class="sidenav-item">
+          <a class="sidenav-link">
+            <i class="fas fa-flag fa-fw me-3"></i><span>Pages</span></a>
+        </li>
+        <li class="sidenav-item">
+          <a class="sidenav-link">
+            <i class="fas fa-video fa-fw me-3"></i><span>Watch</span></a>
+        </li>
+        <li class="sidenav-item">
+          <a class="sidenav-link">
+            <i class="fas fa-shopping-bag fa-fw me-3"></i><span>Marketplace</span></a>
+        </li>
+        <li class="sidenav-item">
+          <a class="sidenav-link">
+            <i class="fas fa-users fa-fw me-3"></i><span>Groups</span></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidenav -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mb-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center justify-content-lg-between">
+        <!-- Left column -->
+        <div class="col-xl-2 d-none d-xl-block">
+          <!--Section: Contacts-->
+          <section class="sticky-top" style="top: 80px">
+            <div class="list-group list-group-naked mb-3">
+              <div class="d-flex justify-content-between">
+                <hp class="ms-3 mt-2 mb-4"><strong>Your contacts</strong></hp>
+
+                <div>
+                  <button type="button" class="btn btn-link btn-sm p-2" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                    <i class="fas fa-cog"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-sm p-2" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button type="button" class="btn btn-link btn-sm p-2" data-mdb-ripple-color="dark" data-mdb-ripple-init>
+                    <i class="fas fa-edit"></i>
+                  </button>
+                </div>
+              </div>
+
+              <a href="/cemessage" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Conah Enriquez</strong>
+              </a>
+
+              <a href="kmmessage" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/3.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Kie Melton</strong>
+              </a>
+
+              <a href="jdmessage" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Janelle Donaldson</strong>
+              </a>
+
+              <a href="message" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://th.bing.com/th/id/OIP.vgslCbpvtEXIsfvZiuMfmgHaJl?w=149&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Joshua Strausman</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Liliana Parrish</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Ellie-Mae Berger</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Toyah Smith</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/9.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Elsa Friedman</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/10.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Kristen Hines</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/11.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Ariah Kaye</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/12.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Bianka Macdonald</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/13.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Naomi Beaumont</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/14.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Kia Wade</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/15.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Emilee Hammond</strong>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action d-flex align-items-center" aria-current="true">
+                <img src="https://mdbootstrap.com/img/new/avatars/16.jpg" class="border rounded-circle me-2" alt=""
+                  style="height: 40px" />
+                <strong>Imani Hahn</strong>
+              </a>
+            </div>
+          </section>
+          <!--Section: Contacts-->
+        </div>
+        <!-- Left column -->
+
+        <!-- Center column -->
+        <div class="col-xl-7 col-lg-8 col-12 mb-4 mb-lg-0 border-left border-right">
+          <!--Section: Messages-->
+          <section class="inner-content">
+            <div class="d-flex mt-3">
+              <button data-mdb-toggle="sidenav" data-mdb-target="#sidenav-inner"
+                class="btn shadow-0 p-0 me-3 d-block d-lg-none" aria-controls="#sidenav-outer" aria-haspopup="true" data-mdb-ripple-init>
+                <i class="fas fa-bars fa-lg"></i>
+              </button>
+
+              <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="rounded-circle me-2"
+                style="width: 30px; height: 30px" alt="" />
+
+              <span>Janelle Donaldson</span>
+            </div>
+
+            <hr />
+<div id="ChatBox">
+
+            <!-- Single message - me -->
+            <div class="d-flex justify-content-end ms-auto">
+              <p class="p-3 bg-primary shadow-1-strong text-white rounded-3" style="max-width: 533px">
+                Hey Janelle, survived Monday?
+                <small class="float-end mt-4">11:06 </small>
+              </p>
+              <img src="https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="rounded-circle ms-2"
+                style="width: 30px; height: 30px" alt="" />
+            </div>
+            <!-- Single message - me -->
+
+            <!-- Single message - interlocutor -->
+            <div class="d-flex justify-content-start w-100">
+              <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="rounded-circle me-2"
+                style="width: 30px; height: 30px" alt="" />
+              <p class="p-3 bg-light rounded-3 shadow-1" style="max-width: 533px">
+                Barely, but coffee's my savior. ☕
+                <small class="float-end text-dark mt-4">11:08</small>
+              </p>
+            </div>
+            <!-- Single message - interlocutor -->
+
+            <!-- Single message - me -->
+            <div class="d-flex justify-content-end ms-auto">
+              <p class="p-3 bg-primary shadow-1-strong text-white rounded-3" style="max-width: 533px">
+                Amen! Binge-watched any new shows?
+                <small class="float-end mt-4">11:08</small>
+              </p>
+              <img src="https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="rounded-circle ms-2"
+                style="width: 30px; height: 30px" alt="" />
+            </div>
+            <!-- Single message - me -->
+
+            <!-- Single message - interlocutor -->
+            <div class="d-flex justify-content-start w-100">
+              <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="rounded-circle me-2"
+                style="width: 30px; height: 30px" alt="" />
+              <p class="p-3 bg-light rounded-3 shadow-1" style="max-width: 533px">
+               Started one, lost track of time.
+                <small class="float-end text-dark mt-4">11:09</small>
+              </p>
+            </div>
+            <!-- Single message - interlocutor -->
+
+            <!-- Single message - me -->
+            <div class="d-flex justify-content-end ms-auto">
+              <p class="p-3 bg-primary shadow-1-strong text-white rounded-3" style="max-width: 533px">
+                The sign of a good show. Plans this weekend?
+                <small class="float-end mt-4">11:33</small>
+              </p>
+              <img src="https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="rounded-circle ms-2"
+                style="width: 30px; height: 30px" alt="" />
+            </div>
+            <!-- Single message - me -->
+
+            <!-- Single message - interlocutor -->
+            <div class="d-flex justify-content-start w-100">
+              <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="rounded-circle me-2"
+                style="width: 30px; height: 30px" alt="" />
+              <p class="p-3 bg-light rounded-3 shadow-1" style="max-width: 533px">
+                 BBQ at Mark's, you in?
+                <small class="float-end text-dark mt-4">11:43</small>
+              </p>
+            </div>
+            <!-- Single message - interlocutor -->
+
+
+            <!-- Single message - me -->
+            <div class="d-flex justify-content-end ms-auto">
+              <p class="p-3 bg-primary shadow-1-strong text-white rounded-3" style="max-width: 533px">
+Wouldn't miss it! Remember last year's chaos?
+                <small class="float-end mt-4">11:56</small>
+              </p>
+              <img src="https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="rounded-circle ms-2"
+                style="width: 30px; height: 30px" alt="" />
+            </div>
+     <!-- Single message - interlocutor -->
+            <div class="d-flex justify-content-start w-100">
+              <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="rounded-circle me-2"
+                style="width: 30px; height: 30px" alt="" />
+              <p class="p-3 bg-light rounded-3 shadow-1" style="max-width: 533px">
+                 Epic, hope this year tops it.
+                <small class="float-end text-dark mt-4">12:09</small>
+              </p>
+            </div>
+            <!-- Single message - interlocutor -->
+    </div>
+            <!-- Single message - me -->
+          </section>
+          <!--Section: Messages-->
+
+          <!--Section: Message input-->
+          <section id="message-input" class="fixed-bottom card bg-light">
+            <div class="card-body">
+              <form class="d-flex">
+                <div class="w-100 mx-2">
+                  <textarea class="form-control" id="messageInput" rows="1" placeholder="Type a message"></textarea>
+                </div>
+<button type="button" onclick="myFunction()" style="background-color: #386bc0; color: #fff; border: 1px solid #386bc0; padding: 6px 10px; cursor: pointer; border-radius: 5px;">
+  <i class="fas fa-plus-circle" style="color: #fff;"></i>
+</button>
+              </form>
+            </div>
+          </section>
+          <!--Section: Message input-->
+        </div>
+        <!-- Center column -->
+
+        <!-- Right column -->
+        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+          <!--Section: Interlocutor data-mdb-->
+          <section class="sticky-top" style="top: 80px">
+            <!-- Section: Intro -->
+            <section class="text-center border-bottom mb-4">
+              <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="rounded-circle shadow-1-strong mb-3"
+                style="height: 100px" alt="" />
+
+              <p class="mb-1"><strong>Janelle Donaldson</strong></p>
+
+              <p class="text-muted small">Active now</p>
+            </section>
+            <!-- Section: Intro -->
+
+            <!-- Section: Shared photos  -->
+            <section class="">
+
+              <p class="mb-4 text-center"><strong>Shared photos</strong></p>
+
+              <div class="lightbox" data-mdb-lightbox-init>
+                <div class="row gx-2">
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/031.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/041.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/032.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/042.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/033.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/043.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/034.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/041.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/035.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/032.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/036.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/043.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/037.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/041.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/038.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/042.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/039.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/043.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/040.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/041.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/032.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/042.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/043.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/041.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/042.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/043.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/041.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/032.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/032.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <img src="https://mdbootstrap.com/img/new/standard/city/043.jpg"
+                      data-mdb-img="https://mdbootstrap.com/img/new/standard/city/043.jpg" alt="Lightbox image"
+                      class="w-100 rounded shadow-1-strong" />
+                  </div>
+                </div>
+              </div>
+
+            </section>
+            <!-- Section: Shared photos -->
+          </section>
+          <!--Section: Interlocutor data-mdb-->
+        </div>
+        <!-- Right column -->
+      </div>
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer></footer>
+  <!--Footer-->
+
+
+
+
+
+  </body>
+
+  <!-- MDB ESSENTIAL -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- MDB PLUGINS -->
+  <script type="text/javascript" src="plugins/js/all.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+<script>
+function myFunction() {
+    const input=document.getElementById("messageInput").value;
+    document.getElementById("ChatBox").insertAdjacentHTML('afterend',`<div class="d-flex justify-content-end ms-auto">
+              <p class="p-3 bg-primary shadow-1-strong text-white rounded-3" style="max-width: 533px">
+                ${input}
+                <small class="float-end mt-4">2:00</small>
+              </p>
+              <img src="https://th.bing.com/th/id/OIP.6uUA-poR2Kkef7gDjF-5RQHaNQ?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="rounded-circle ms-2"
+                style="width: 30px; height: 30px" alt="" />
+            </div>`)
+}
+</script>
 </html>
