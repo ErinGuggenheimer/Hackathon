@@ -24,9 +24,11 @@ def deliver_policy_page_to_user():
 def deliver_tasksearch_page_to_user():
   return render_template('tasksearch.html')
 
-@app.route('/message?#')
+
+@app.route('/message'
+           '')
 def deliver_message_page_to_user():
-  return render_template('message.html')
+  return render_template('Message.html')
 
 @app.route('/register')
 def deliver_register_page_to_user():
