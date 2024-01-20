@@ -72,19 +72,19 @@ def validateUser(username, password):
 
 @app.route('/css/mdb.min.css')
 def bootstrap_css():
-   return send_file('./mdbootstrap/css/mdb.min.css')
+   return send_file('Hackathon/mdbootstrap/css/mdb.min.css')
 
 @app.route('/plugins/css/all.min.css')
 def bootstrap_plugin_css():
-   return send_file('./mdbootstrap/plugins/css/all.min.css')
+   return send_file('Hackathon/mdbootstrap/plugins/css/all.min.css')
 
 @app.route('/js/mdb.min.js')
 def bootstrap_js():
-   return send_file('./mdbootstrap/js/mdb.min.js')
+   return send_file('Hackathon/mdbootstrap/js/mdb.min.js')
 
 @app.route('/plugins/js/all.min.js')
 def bootstrap_plugin_js():
-   return send_file('./mdbootstrap/plugins/js/all.min.js')
+   return send_file('Hackathon/mdbootstrap/plugins/js/all.min.js')
 
 app.debug = True
 app.run(port=5000)
