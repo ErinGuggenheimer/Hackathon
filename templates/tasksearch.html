@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    />
-    <!-- MDB ESSENTIAL -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- MDB PLUGINS -->
-    <link rel="stylesheet" href="plugins/css/all.min.css" />
-    <!-- Custom styles -->
-    <style></style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Swiper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
 
-  <body>
+<body>
 
- <button id="redirectButton">Click me to go to a different page</button>
+  <ion-icon id="dislike" name="close-circle-outline"></ion-icon>
 
-<script>
-    // JavaScript code to handle button click and redirect
-    document.getElementById("redirectButton").addEventListener("click", function() {
-        // Change 'newPage.html' to the URL of the page you want to redirect to
-        window.location.href = 'newPage.html';
+  <div id="swiper"></div>
 
-  </body>
+  <ion-icon id="like" name="checkmark-circle-outline"></ion-icon>
 
-  <!-- MDB ESSENTIAL -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- MDB PLUGINS -->
-  <script type="text/javascript" src="plugins/js/all.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='card.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
