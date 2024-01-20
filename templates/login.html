@@ -105,16 +105,19 @@
             <div class="col-xl-5 col-md-8">
               <form class="bg-white rounded shadow-5-strong p-5">
                 <!-- Email input -->
-                <div class="form-outline mb-4" data-mdb-input-init>
-                  <input type="email" id="form1Example1" class="form-control" />
-                  <label class="form-label" for="form1Example1">Email address</label>
-                </div>
+                <form action="/signin" method="POST">
+
+
+                  <div class="form-outline mb-4" data-mdb-input-init>
+                    <input type="email" name="username id="form1Example1" class="form-control" />
+                    <label class="form-label" for="form1Example1">Email address</label>
+                  </div>
 
                 <!-- Password input -->
-                <div class="form-outline mb-4" data-mdb-input-init>
-                  <input type="password" id="form1Example2" class="form-control" />
-                  <label class="form-label" for="form1Example2">Password</label>
-                </div>
+                  <div class="form-outline mb-4" data-mdb-input-init>
+                    <input type="password" name="username" id="form1Example2" class="form-control" />
+                    <label class="form-label" for="form1Example2">Password</label>
+                  </div>
 
                 <!-- 2 column grid layout for inline styling -->
                 <div class="row mb-4">
@@ -135,7 +138,10 @@
                 </div>
 
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block" data-mdb-ripple-init>Sign in</button>
+                  <li class="nav-item">
+              <a class="btn btn-primary btn-block" href="http://127.0.0.1:5000/tasksearch" target="_blank">Sign in</a>
+            </li>
+
               </form>
             </div>
           </div>
