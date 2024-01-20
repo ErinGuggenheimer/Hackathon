@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_file
+from flask import Flask, render_template, send_file, request, json
 
 app = Flask(__name__)
 #hgvhgfvhgcvhgc
@@ -8,7 +8,9 @@ app = Flask(__name__)
 def deliver_home_page_to_user():
   return render_template('home.html')
 
-#hi this is a tes
+
+
+
 @app.route('/tasksearch')
 def deliver_tasksearch_page_to_user():
   return render_template('tasksearch.html')
@@ -23,8 +25,23 @@ def deliver_register_page_to_user():
 
 
 @app.route('/login')
+
 def deliver_login_page_to_user():
   return render_template('login.html')
+
+@app.route('/login' , methods=['POST'])
+def signin():
+    username = request.form['username']
+    password = request.form['password']
+    print(username, password)
+    if username and password:
+        return json.dumps({'validation': validateUser(username, password)})
+    return json.dumps({'validation': False})
+
+
+
+def validateUser(username, password):
+    return True
 
 
 
@@ -48,3 +65,4 @@ def bootstrap_plugin_js():
 
 app.debug = True
 app.run(port=5000)
+
