@@ -33,18 +33,18 @@ def deliver_register_page_to_user():
   return render_template('register.html')
 
 
-@app.route('/cemessage?#')
+@app.route('/cemessage')
 def deliver_profile1_page_to_user():
   return render_template('profile1.html')
 
 
-@app.route('/kmmessage?#')
+@app.route('/kmmessage')
 def deliver_profile2_page_to_user():
   return render_template('profile2.html')
 
 
 
-@app.route('/jdmessage?#')
+@app.route('/jdmessage')
 def deliver_profile3_page_to_user():
   return render_template('profile3.html')
 
