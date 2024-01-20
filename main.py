@@ -49,8 +49,7 @@ def deliver_profile3_page_to_user():
   return render_template('profile3.html')
 
 @app.route('/login')
-
-def deliver_profile3_page_to_user():
+def deliver_login_page_to_user():
   return render_template('login.html')
 
 @app.route('/login' , methods=['POST'])
